@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+
+<SplitPane dividerPositions="0.5" style="-fx-background-color: #8095D9;" xmlns="http://javafx.com/javafx/17.0.2-ea"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.ivs.dbadminsuite.dbvisualizer.DatabaseVisualizerController">
+    <TableView fx:id="foreignKeysTable" style="-fx-background-color: #8095D9;">
+        <columns>
+            <TableColumn fx:id="foreignKeyTableColumn" minWidth="20.0" prefWidth="100.0" text="Таблица"/>
+            <TableColumn fx:id="foreignKeyColumn" minWidth="20.0" prefWidth="148.0" text="Внешний ключ"/>
+        </columns>
+    </TableView>
+
+
+    <TableView fx:id="attributesTable" style="-fx-background-color: #8095D9;">
+        <columns>
+            <TableColumn fx:id="tableColumn" minWidth="20.0" prefWidth="87.0" text="Таблица"/>
+            <TableColumn fx:id="attributesColumn" minWidth="20.0" prefWidth="161.0" text="Атрибуты"/>
+        </columns>
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+    </TableView>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+</SplitPane>

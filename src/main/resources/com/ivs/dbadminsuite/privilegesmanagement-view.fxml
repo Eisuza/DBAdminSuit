@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="300" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivs.dbadminsuite.umanagment.PrivilegesManagementController">
+    <center>
+        <TableView fx:id="privilegesTableView">
+            <columns>
+                <TableColumn fx:id="userColumn" prefWidth="72.0" text="User" />
+                <TableColumn fx:id="hostColumn" prefWidth="69.0" text="Host" />
+                <TableColumn fx:id="selectPrivColumn" prefWidth="90.0" text="SelectPriv" />
+                <TableColumn fx:id="insertPrivColumn" prefWidth="105.0" text="InsertPriv" />
+                <TableColumn fx:id="updatePrivColumn" prefWidth="89.0" text="UpdatePriv" />
+                <TableColumn fx:id="deletePrivColumn" prefWidth="87.0" text="DeletePriv" />
+                <TableColumn fx:id="createPrivColumn" text="CreatePriv" />
+                <TableColumn fx:id="dropPrivColumn" text="DropPriv" />
+                <TableColumn fx:id="grantPrivColumn" text="GrantPriv" />
+                <TableColumn fx:id="referencesPrivColumn" text="ReferencesPriv" />
+                <TableColumn fx:id="alterPrivColumn" text="AlterPriv" />
+                <TableColumn fx:id="createTmpTablePrivColumn" text="CreateTmpTablePriv" />
+                <TableColumn fx:id="lockTablesPrivColumn" text="LockTablesPriv" />
+                <TableColumn fx:id="executePrivColumn" text="ExecutePriv" />
+                <TableColumn fx:id="createViewPrivColumn" text="CreateViewPri" />
+                <TableColumn fx:id="showViewPrivColumn" text="ShowViewPriv" />
+                <TableColumn fx:id="createRoutinePrivColumn" text="CreateRoutinePriv" />
+                <TableColumn fx:id="alterRoutinePrivColumn" text="AlterRoutinePriv" />
+                <TableColumn fx:id="eventPrivColumn" text="EventPriv" />
+                <TableColumn fx:id="triggerPrivColumn" text="TriggerPriv" />
+                <TableColumn fx:id="accountLockedColumn" prefWidth="70.0" text="AccountLocked" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" style="-fx-background-color: #8095D9;">
+            <Button onAction="#addNewUser" style="-fx-background-color: #A6B3E7;" text="Добавить пользователя">
+                <HBox.margin>
+                    <Insets bottom="10" top="10.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Lucida Console" size="12.0" />
+                </font>
+                <textFill>
+                    <RadialGradient centerX="0.5165745856353592" centerY="0.528436018957346" radius="0.5">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color red="0.7300000190734863" green="0.3748663663864136" blue="0.2773999869823456" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </RadialGradient>
+                </textFill>
+            </Button>
+            <Button onAction="#deleteUser" style="-fx-background-color: #A6B3E7;" text="Удалить пользователя">
+                <HBox.margin>
+                    <Insets bottom="10" top="10.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Lucida Console" size="12.0" />
+                </font>
+                <textFill>
+                    <RadialGradient centerX="0.5165745856353592" centerY="0.528436018957346" radius="0.5">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color red="0.7300000190734863" green="0.3748663663864136" blue="0.2773999869823456" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </RadialGradient>
+                </textFill>
+            </Button>
+            <Button onAction="#editUser" style="-fx-background-color: #A6B3E7;" text="Редактировать пользователя">
+                <HBox.margin>
+                    <Insets bottom="10" top="10.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Lucida Console" size="12.0" />
+                </font>
+                <textFill>
+                    <RadialGradient centerX="0.5165745856353592" centerY="0.528436018957346" radius="0.5">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color red="0.7300000190734863" green="0.3748663663864136" blue="0.2773999869823456" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </RadialGradient>
+                </textFill>
+            </Button>
+            <Button onAction="#savePermissions" style="-fx-background-color: #A6B3E7;" text="Сохранить настройки">
+                <HBox.margin>
+                    <Insets bottom="10" top="10.0" />
+                </HBox.margin>
+                <font>
+                    <Font name="Lucida Console" size="12.0" />
+                </font>
+                <textFill>
+                    <RadialGradient centerX="0.5165745856353592" centerY="0.528436018957346" radius="0.5">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color red="0.7300000190734863" green="0.3748663663864136" blue="0.2773999869823456" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </RadialGradient>
+                </textFill>
+            </Button>
+        </HBox>
+    </bottom>
+</BorderPane>

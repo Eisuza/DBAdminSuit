@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10" style="-fx-background-color: #8095D9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivs.dbadminsuite.qexecutor.QueryExecutorController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Введите SQL запрос:">
+      <font>
+         <Font name="Lucida Console" size="14.0" />
+      </font>
+      <textFill>
+         <RadialGradient centerX="0.494475138121547" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.46052631735801697" green="0.21320663392543793" blue="0.21320663392543793" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill></Label>
+    <TextArea fx:id="queryTextArea" prefHeight="100" prefWidth="400" />
+    <Button onAction="#executeQuery" style="-fx-background-color: #A6B3E7;" text="Выполнить запрос">
+        <font>
+            <Font name="Lucida Console" size="12.0" />
+        </font>
+        <textFill>
+            <RadialGradient centerX="0.5165745856353592" centerY="0.528436018957346" radius="0.5">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.7300000190734863" green="0.3748663663864136" blue="0.2773999869823456" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color />
+                        </color>
+                    </Stop>
+                </stops>
+            </RadialGradient>
+        </textFill>
+    </Button>
+    <TableView fx:id="resultTableView" prefHeight="200" prefWidth="400">
+    </TableView>
+</VBox>
